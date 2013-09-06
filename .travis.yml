@@ -1,2 +1,29 @@
- 
 language: java
+jdk:
+  - openjdk7
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+script:
+  - "mvn integration-test"
+
+
+
+#before_script:
+#  - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
+  
+#jdk:
+#  - openjdk6
+#  - openjdk7
+#  - oraclejdk6
+#  - oraclejdk7
+  
+#env:
+#  global:
+#    - secure: "HRZicgmnpomo3yJVdiHX8xFwXhofMGPD46SdvmjgYLO4y1HZRXsOu10uz1TN\ncDc4gEgLpCWIcODnyf1oZd0clzvq9BJbnpF4uOJuTzUipBAeoFPwY83bwYNC\nm0ALVDaPdiUZ0JuPuagxwxImv+FFArJbfF7Ai4j9QDSTzitBrDA="
+#    - secure: "VzDcOwiCHG7Rb8RtiV2E7Az2izvNx2ek9qN0PZHfNnGPrPILzb/Bdo29UOAu\nrMfIY2tN6AxLVdGNhj+xdbCfggBiYuEelZhSzoBq7y/3oBkE7lopaCHXiC5O\nsNtMlfYVtO5BoIxiaSpDqhQnmiv7WYFuQ4JfkRlj+swo9pfg/3w="
+  
+  
+#language: java
+#script: "mvn clean package"
+
