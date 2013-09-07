@@ -12,10 +12,9 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     </head>
     <body>
     <h:form>
-        <p>This is a simple hello world page using Faces.</p>
-        <p>Enter your message here: <br/>
-        <h:inputText valueChangeListener="#{messageModel.processValueChange}" value="#{message}" size="35"/></p>
-        <h:commandButton value="Submit" action="#{pageController.processPage2}"/>
+        <p>Dieser Text wurde eingegeben:</p>
+        <p><h:outputText value="#{messageModel.newValue}" /></p>
+        <h:commandButton value="Submit" action="#{pageController.processPage1}"/>
     </h:form>
     </body>
     </html>
