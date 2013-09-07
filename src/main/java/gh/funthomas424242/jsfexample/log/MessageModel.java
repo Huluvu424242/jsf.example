@@ -1,4 +1,4 @@
-package log;
+package gh.funthomas424242.jsfexample.log;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;

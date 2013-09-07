@@ -34,7 +34,7 @@
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>messageModel</managed-bean-name>
-		<managed-bean-class>log.MessageModel</managed-bean-class>
+		<managed-bean-class>gh.funthomas424242.jsfexample.log.MessageModel</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
