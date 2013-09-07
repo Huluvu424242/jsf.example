@@ -1,4 +1,4 @@
-package test;
+package log;
 
 import javax.faces.event.ValueChangeEvent;
 
