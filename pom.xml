@@ -160,13 +160,13 @@
 				<artifactId>maven-failsafe-plugin</artifactId>
 				<version>2.16</version>
 				<configuration>
-			<includes>
-			<iclude>**/test/integration/*.java</iclude>
-			</includes>
-					<!-- useSystemClassLoader>false</useSystemClassLoader-->
 					<groups>
 						gh.funthomas424242.jsfexample.test.integration.IntegrationTest
 					</groups>
+					<!-- ab hier ist die Konfiguration unlogisch aber wichtig -->
+					<includes>
+						<iclude>**/test/integration/*.java</iclude>
+					</includes>
 				</configuration>
 				<executions>
 					<execution>
